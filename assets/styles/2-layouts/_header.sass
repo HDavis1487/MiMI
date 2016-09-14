@@ -1,0 +1,86 @@
+// HEADER
+.header
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	text-align: center
+	height: 65vh
+	overflow: hidden
+	// margin-bottom: 100px
+	color: $white
+	background:
+		image: url('../img/ref.jpg')
+		size: cover
+		// position: center
+
+	i 
+		margin-bottom: 20px
+		font-size: 15px
+.header-nav
+	display: flex
+	justify-content: space-between
+	align-items: center
+	color: $white
+	padding:  20px
+	// background: rgba($black,0.8)
+
+.header-logo-main
+	// float: left
+	background-image: url("../img/Logo.png")
+	background-size: cover
+	background-position: center
+	display: inline-block
+	width: 125px
+	height: 88px
+	text-indent: -9999px
+	
+.header-site-nav
+	// flex: 1
+	text-align: center
+	font-size: 13px
+	text-transform: uppercase
+
+	
+	li 
+		display: inline-block
+		margin: 0 15px
+	a	
+		text-decoration: none
+		color: $white
+
+
+.header-hero
+	text-transform: uppercase
+	max-width: 800px
+	margin: 0 auto
+	// text-align: left
+	position: relative
+	top: 45px
+	left: 100px
+	padding-left: 40px
+	.header-hero-title
+		color: $white
+		font-size: 80px
+		font-weight: 300
+		margin-bottom: 3px
+	.header-hero-blurb
+		// font-weight: 700
+		font-size: 18px
+		font-style: italic
+		text-align: left
+		.one 
+			color: $orange
+			font-weight: 700
+		.two
+			color: $aqua
+
+
+.header input[type='text']
+	padding: 10px 20px
+	border: 2px solid $white
+	border-radius: 2px
+	box-sizing: border-box
+	width: 100%
+	// background-color: rgba($white,0.9)
+	background-color: transparent
+	color: $white

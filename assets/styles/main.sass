@@ -1,0 +1,145 @@
+@import '1-tools/tools'
+@import '2-layouts/layouts'
+@import '3-modules/modules'
+
+
+$orange: #f58220
+$aqua: #008e97
+$blue: #005778
+
+$white: #f3f3f3
+$grey: #777
+$silver: #ccc
+$black: #555
+
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+body
+	background: $white
+	font-family: "Oxygen",sans-serif
+	color: $black
+	letter-spacing: .9px
+	line-height: 1.6
+
+
+	
+
+
+.wrapped
+	max-width: 960px
+	margin: 0 auto
+.flex-row
+	display: flex
+	flex-direction: row
+	align-items: center
+
+.cite
+	font-family: "Roboto Slab",georgia,serif
+	font-style: italic
+	color: rgba($aqua,0.7)
+	font-size: 10px
+	margin-bottom: 3px
+	// text-align: right
+.short-hr
+	width: 3rem
+	border: 1px solid $orange
+	display: inline-block
+
+
+.text-box,.text-box-alt
+	padding: 20px
+	// color: $black
+
+.text-box
+	background: rgba($white,0.9)
+.text-box-alt
+	background: rgba($silver,0.2)
+
+
+.facts-list
+	text-align: right
+
+// .left-side
+// 	// background: pink
+// 	width: 80%
+// 	float: left
+	
+// .right-side
+// 	// background: red
+// 	width: 20%
+// 	float: left
+	
+
+// NEWS
+
+.highlights
+	// color: $white
+
+	h4
+		font-size: 22px
+		font-weight: 300
+		color: $orange
+
+	h5
+		font-size: 12px
+		font-weight: 700
+		font-family: "Roboto Slab", serif
+		color: $aqua
+
+
+.grid
+	padding: 10px
+
+	.item
+		background: #ccc
+		height: 60px
+		margin-bottom: 10px
+		display: inline-block
+		width: 100%
+		border-radius: 4%
+		padding: 20px
+		box-sizing: border-box
+		width: 160px
+		// float: right
+		
+		background:
+			position: center
+			size: cover
+
+		&:nth-child(1)
+			background-image: url("../img/Sept-11/game-one.jpg")
+		&:nth-child(2)
+			background-image: url("../img/Sept-11/game-two.jpg")
+		&:nth-child(3)
+			background-image: url("../img/Sept-11/game-three.jpg")
+		&:nth-child(4)
+			background-image: url("../img/Sept-11/game-two.jpg")
+		&:nth-child(5)
+			background-image: url("../img/Sept-11/game-three.jpg")
+		&:nth-child(6)
+			background-image: url("../img/Sept-11/game-two.jpg")
+		&:nth-child(7)
+			background-image: url("../img/Sept-11/game-one.jpg")
+		&:nth-child(8)
+			background-image: url("../img/Sept-11/game-one.jpg")
+
+		&:nth-child(3n-5)
+			height: 50px
+
+
+
+
+		&:nth-child(2n-1)
+			height: 80px
+
+.scoreboard
+	display: flex
+	color: pink
+	font-family: 'Roboto Slab', serif
+
+	span 
+		font-weight: 700
