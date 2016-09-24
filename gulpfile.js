@@ -27,7 +27,8 @@ var output = {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./",
+            port:"5000"
         }
     });
 });
@@ -70,7 +71,7 @@ gulp.task('watch',function(){
   gulp.watch(src.sass,['sass']);
   // gulp.watch("./*.html").on('change', browserSync.reload);
   // gulp.watch("sass/*.sass").on('change', browserSync.reload);
-  gulp.watch("assets/jadefiles/**/*.jade").on('change', browserSync.reload);
+  gulp.watch("./**.jade").on('change', browserSync.reload);
   gulp.watch("assets/js**/*.js").on('change', browserSync.reload);
 });
 

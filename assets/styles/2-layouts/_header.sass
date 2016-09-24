@@ -4,7 +4,7 @@
 	flex-direction: column
 	justify-content: space-between
 	text-align: center
-	height: 65vh
+	height: 100vh
 	overflow: hidden
 	// margin-bottom: 100px
 	color: $white
@@ -13,7 +13,7 @@
 		size: cover
 		// position: center
 
-	i 
+	i
 		margin-bottom: 20px
 		font-size: 15px
 .header-nav
@@ -33,21 +33,29 @@
 	width: 125px
 	height: 88px
 	text-indent: -9999px
-	
+
 .header-site-nav
 	// flex: 1
 	text-align: center
 	font-size: 13px
 	text-transform: uppercase
 
-	
-	li 
+
+	li
 		display: inline-block
 		margin: 0 15px
-	a	
+	a
 		text-decoration: none
 		color: $white
 
+		&:hover
+			border-bottom: 2px solid $orange
+			padding-bottom: 12px
+	a.is-active
+		padding-bottom: 12px
+		border-bottom: 2px solid $orange
+		color: $aqua
+		font-weight: 700
 
 .header-hero
 	text-transform: uppercase
@@ -56,7 +64,7 @@
 	// text-align: left
 	position: relative
 	top: 45px
-	left: 100px
+	left: 72px
 	padding-left: 40px
 	.header-hero-title
 		color: $white
@@ -68,7 +76,7 @@
 		font-size: 18px
 		font-style: italic
 		text-align: left
-		.one 
+		.one
 			color: $orange
 			font-weight: 700
 		.two

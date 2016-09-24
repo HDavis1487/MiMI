@@ -12,32 +12,43 @@ body
 	
 	include includes/history
 	
-	section.highlights
-		.text-box-alt
-			.wrapped
-				h4 Highlights
-				h5 9/11/16
-				p vs Seahawks (10-12) L
-				
-				.grid
-					- var i = 0;
-					while (i++ < 8)
-						.item #{i}
-				
-
-
-				<iframe></iframe>
-					
-				.upcoming
-					h5 9/18/16
-					h4 vs Patriots (1-0)
-					//- img(src="../img/Sept-11/game-one.jpg", alt="")
-					//- img(src="../img/Sept-11/game-two.jpg", alt="")
-					//- img(src="../img/Sept-11/game-three.jpg", alt="")
-
-
-	//- <iframe width="560" height="315" src="https://www.youtube.com/embed/a1e8uLEstpM" frameborder="0" allowfullscreen></iframe>
+	include includes/schedule
+	
+	section.roster
+		.wrapped
+			.proPics
+				ulp
+				hr.short-hr
+				.photo-reel
+					img(src="//placehold.it/125x125", alt="")
+					img(src="//placehold.it/125x125", alt="")
+					img(src="//placehold.it/125x125", alt="")
+					img(src="//placehold.it/125x125", alt="")
+					img(src="//placehold.it/125x125", alt="")
+					img(src="//placehold.it/125x125", alt="")
+					img(src="//placehold.it/125x125", alt="")
+				a(href="") View more
+			h3 2016 Roster
+			p This is the roster of the team.
 		
+	section.news
+		.wrapped 
+			h3 League News
+			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore enim doloribus doloremque excepturi qui, omnis et iure, eveniet fugit amet?
+			a(href="") Read More
+		
+	section.standings
+		.wrapped
+			.division 
+				li.pats New England Patriots  (1-0)
+				li.us Miami Dolphons (0-1)
+				li.jets New York Jets (0-1)
+				li.bills Buffalo Bills (0-1)
+			.league 
+	
+	footer(style="background:pink")
+		p You have reached the footer congradulations.
+		h5 2016 &copy;
 
 	div(class="placeholder",style="height:2000px")
 

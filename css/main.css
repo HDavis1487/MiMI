@@ -353,6 +353,10 @@ td,
 th {
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: #005778; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,9 +369,9 @@ th {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  height: 65vh;
+  height: 100vh;
   overflow: hidden;
-  color: #ddd;
+  color: #f3f3f3;
   background-image: url("../img/ref.jpg");
   background-size: cover; }
   .header i {
@@ -384,7 +388,7 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #ddd;
+  color: #f3f3f3;
   padding: 20px; }
 
 .header-logo-main {
@@ -405,7 +409,15 @@ th {
     margin: 0 15px; }
   .header-site-nav a {
     text-decoration: none;
-    color: #ddd; }
+    color: #f3f3f3; }
+    .header-site-nav a:hover {
+      border-bottom: 2px solid #f58220;
+      padding-bottom: 12px; }
+  .header-site-nav a.is-active {
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f58220;
+    color: #008e97;
+    font-weight: 700; }
 
 .header-hero {
   text-transform: uppercase;
@@ -413,10 +425,10 @@ th {
   margin: 0 auto;
   position: relative;
   top: 45px;
-  left: 100px;
+  left: 72px;
   padding-left: 40px; }
   .header-hero .header-hero-title {
-    color: #ddd;
+    color: #f3f3f3;
     font-size: 80px;
     font-weight: 300;
     margin-bottom: 3px; }
@@ -432,12 +444,12 @@ th {
 
 .header input[type='text'] {
   padding: 10px 20px;
-  border: 2px solid #ddd;
+  border: 2px solid #f3f3f3;
   border-radius: 2px;
   box-sizing: border-box;
   width: 100%;
   background-color: transparent;
-  color: #ddd; }
+  color: #f3f3f3; }
 
 .history {
   display: -webkit-box;
@@ -455,7 +467,7 @@ th {
     color: #008e97;
     font-weight: 700; }
   .history-info {
-    color: rgba(51, 51, 51, 0.8);
+    color: rgba(85, 85, 85, 0.8);
     font-size: 12px;
     padding: 11px;
     width: 65%; }
@@ -467,28 +479,80 @@ th {
     margin: 0; }
     .history ul li {
       list-style: none;
-      display: inline-block;
-      margin: 10px auto;
+      display: inline;
+      margin: 2px auto;
       color: #005778;
-      font-size: 17px; }
+      font-size: 16px; }
       .history ul li h5 {
-        margin-bottom: -9px;
+        margin-bottom: -3px;
         color: #008e97; }
 
+.highlights h4 {
+  font-size: 22px;
+  font-weight: 300;
+  color: #f58220; }
+
+.highlights h5 {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  color: #008e97; }
+
+.grid {
+  padding: 10px; }
+  .grid .item {
+    background: #ccc;
+    height: 60px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 4%;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 160px;
+    text-align: right;
+    color: #f3f3f3;
+    text-indent: 999px;
+    background-position: center;
+    background-size: cover; }
+    .grid .item:nth-child(1) {
+      background-image: url("../img/Sept-11/game-one.jpg"); }
+    .grid .item:nth-child(2) {
+      background-image: url("../img/Sept-11/game-two.jpg"); }
+    .grid .item:nth-child(3) {
+      background-image: url("../img/Sept-11/game-three.jpg"); }
+    .grid .item:nth-child(4) {
+      background-image: url("../img/Sept-11/game-two.jpg"); }
+    .grid .item:nth-child(5) {
+      background-image: url("../img/Sept-11/game-three.jpg"); }
+    .grid .item:nth-child(6) {
+      background-image: url("../img/Sept-11/game-two.jpg"); }
+    .grid .item:nth-child(7) {
+      background-image: url("../img/Sept-11/game-one.jpg"); }
+    .grid .item:nth-child(8) {
+      background-image: url("../img/Sept-11/game-one.jpg"); }
+    .grid .item:nth-child(3n-5) {
+      height: 50px; }
+    .grid .item:nth-child(2n-1) {
+      height: 80px; }
+    .grid .item:hover {
+      -webkit-filter: blur(1px);
+              filter: blur(1px); }
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+  box-sizing: border-box; }
 
 body {
   background: #f3f3f3;
   font-family: "Oxygen",sans-serif;
   color: #555;
   letter-spacing: .9px;
-  line-height: 1.6; }
+  line-height: 1.6;
+  margin: 0 auto;
+  overflow-x: hidden; }
 
 .wrapped {
-  max-width: 960px;
+  max-width: 1160px;
   margin: 0 auto; }
 
 .flex-row {
@@ -527,57 +591,35 @@ body {
 .facts-list {
   text-align: right; }
 
-.highlights h4 {
-  font-size: 22px;
-  font-weight: 300;
-  color: #f58220; }
+.news {
+  padding: 20px; }
 
-.highlights h5 {
-  font-size: 12px;
-  font-weight: 700;
-  font-family: "Roboto Slab", serif;
-  color: #008e97; }
+.roster {
+  padding: 20px;
+  background: rgba(0, 142, 151, 0.5);
+  color: #f3f3f3; }
+  .roster a {
+    font-size: 9px;
+    text-transform: uppercase;
+    font-style: italic; }
 
-.grid {
-  padding: 10px; }
-  .grid .item {
-    background: #ccc;
-    height: 60px;
-    margin-bottom: 10px;
-    display: inline-block;
-    width: 100%;
-    border-radius: 4%;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 160px;
-    background-position: center;
-    background-size: cover; }
-    .grid .item:nth-child(1) {
-      background-image: url("../img/Sept-11/game-one.jpg"); }
-    .grid .item:nth-child(2) {
-      background-image: url("../img/Sept-11/game-two.jpg"); }
-    .grid .item:nth-child(3) {
-      background-image: url("../img/Sept-11/game-three.jpg"); }
-    .grid .item:nth-child(4) {
-      background-image: url("../img/Sept-11/game-two.jpg"); }
-    .grid .item:nth-child(5) {
-      background-image: url("../img/Sept-11/game-three.jpg"); }
-    .grid .item:nth-child(6) {
-      background-image: url("../img/Sept-11/game-two.jpg"); }
-    .grid .item:nth-child(7) {
-      background-image: url("../img/Sept-11/game-one.jpg"); }
-    .grid .item:nth-child(8) {
-      background-image: url("../img/Sept-11/game-one.jpg"); }
-    .grid .item:nth-child(3n-5) {
-      height: 50px; }
-    .grid .item:nth-child(2n-1) {
-      height: 80px; }
-
-.scoreboard {
+.photo-reel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: pink;
-  font-family: 'Roboto Slab', serif; }
-  .scoreboard span {
-    font-weight: 700; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0; }
+
+.us {
+  color: #f58220; }
+
+.pats {
+  color: #002244; }
+
+.jets {
+  color: #203731; }
+
+.bills {
+  color: #c60c30; }

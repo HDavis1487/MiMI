@@ -1,0 +1,66 @@
+.highlights
+	// color: $white
+
+	h4
+		font-size: 22px
+		font-weight: 300
+		color: $orange
+
+	h5
+		font-size: 12px
+		font-weight: 700
+		font-family: "Roboto Slab", serif
+		color: $aqua
+
+
+
+.grid
+	padding: 10px
+
+	.item
+		background: #ccc
+		height: 60px
+		margin-bottom: 10px
+		display: inline-block
+		width: 100%
+		border-radius: 4%
+		padding: 20px
+		box-sizing: border-box
+		width: 160px
+		// float: right
+		text-align: right
+		color: $white
+		text-indent: 999px
+
+		background:
+			position: center
+			size: cover
+
+		&:nth-child(1)
+			background-image: url("../img/Sept-11/game-one.jpg")
+		&:nth-child(2)
+			background-image: url("../img/Sept-11/game-two.jpg")
+		&:nth-child(3)
+			background-image: url("../img/Sept-11/game-three.jpg")
+		&:nth-child(4)
+			background-image: url("../img/Sept-11/game-two.jpg")
+		&:nth-child(5)
+			background-image: url("../img/Sept-11/game-three.jpg")
+		&:nth-child(6)
+			background-image: url("../img/Sept-11/game-two.jpg")
+		&:nth-child(7)
+			background-image: url("../img/Sept-11/game-one.jpg")
+		&:nth-child(8)
+			background-image: url("../img/Sept-11/game-one.jpg")
+
+		&:nth-child(3n-5)
+			height: 50px
+
+
+
+
+		&:nth-child(2n-1)
+			height: 80px
+
+		&:hover
+			filter: blur(1px)

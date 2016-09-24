@@ -15,22 +15,22 @@ $black: #555
 
 *
 	box-sizing: border-box
-	margin: 0
-	padding: 0
-
+	// overflow: hidden
 body
 	background: $white
 	font-family: "Oxygen",sans-serif
 	color: $black
 	letter-spacing: .9px
 	line-height: 1.6
+	margin: 0 auto
+	overflow-x: hidden
 
 
-	
+
 
 
 .wrapped
-	max-width: 960px
+	max-width: 1160px
 	margin: 0 auto
 .flex-row
 	display: flex
@@ -67,79 +67,34 @@ body
 // 	// background: pink
 // 	width: 80%
 // 	float: left
-	
+
 // .right-side
 // 	// background: red
 // 	width: 20%
 // 	float: left
-	
+
 
 // NEWS
-
-.highlights
-	// color: $white
-
-	h4
-		font-size: 22px
-		font-weight: 300
-		color: $orange
-
-	h5
-		font-size: 12px
-		font-weight: 700
-		font-family: "Roboto Slab", serif
-		color: $aqua
-
-
-.grid
-	padding: 10px
-
-	.item
-		background: #ccc
-		height: 60px
-		margin-bottom: 10px
-		display: inline-block
-		width: 100%
-		border-radius: 4%
-		padding: 20px
-		box-sizing: border-box
-		width: 160px
-		// float: right
-		
-		background:
-			position: center
-			size: cover
-
-		&:nth-child(1)
-			background-image: url("../img/Sept-11/game-one.jpg")
-		&:nth-child(2)
-			background-image: url("../img/Sept-11/game-two.jpg")
-		&:nth-child(3)
-			background-image: url("../img/Sept-11/game-three.jpg")
-		&:nth-child(4)
-			background-image: url("../img/Sept-11/game-two.jpg")
-		&:nth-child(5)
-			background-image: url("../img/Sept-11/game-three.jpg")
-		&:nth-child(6)
-			background-image: url("../img/Sept-11/game-two.jpg")
-		&:nth-child(7)
-			background-image: url("../img/Sept-11/game-one.jpg")
-		&:nth-child(8)
-			background-image: url("../img/Sept-11/game-one.jpg")
-
-		&:nth-child(3n-5)
-			height: 50px
-
-
-
-
-		&:nth-child(2n-1)
-			height: 80px
-
-.scoreboard
+.news
+	padding: 20px
+.roster
+	padding: 20px
+	background: rgba($aqua,0.5)
+	color: $white
+	a
+		font-size: 9px
+		text-transform: uppercase
+		font-style: italic
+.photo-reel
 	display: flex
-	color: pink
-	font-family: 'Roboto Slab', serif
+	justify-content: space-between
+	margin: 30px 0
 
-	span 
-		font-weight: 700
+.us
+	color: $orange
+.pats
+	color: $pats
+.jets
+	color: $jets
+.bills
+	color: $bills
